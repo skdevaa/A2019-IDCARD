@@ -1,0 +1,10 @@
+{
+  "name": "IDCard",
+  "label": "IDCard",
+  "description": "Provides actions for reading ID cards.",
+  "group": "",
+  "artifactName": "",
+  "packageVersion": "",
+  "codeVersion": "",
+  "commands": []
+}

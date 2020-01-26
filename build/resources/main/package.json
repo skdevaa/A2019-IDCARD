@@ -1,0 +1,103 @@
+{
+    "name": "IDCard",
+    "label": "IDCard",
+    "description": "Provides actions for reading ID cards.",
+    "group": "com.automationanywhere",
+    "artifactName": "IDCard",
+    "packageVersion": "1.0.0-20200126-172805",
+    "codeVersion": "1.0.0-20200126-172805",
+    "commands": [
+        {
+            "name": "idcardfile",
+            "label": "ID Details File",
+            "description": "ID Details File",
+            "nodeLabel": "ID Details File",
+            "mainClass": "com.automationanywhere.botcommand.sk.GetIDCardFileCommand",
+            "returnType": "DICTIONARY",
+            "returnSubtype": "STRING",
+            "returnLabel": "ID Details",
+            "returnRequired": true,
+            "attributes": [
+                {
+                    "name": "textfile",
+                    "label": "ID Text File",
+                    "type": "FILE",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "idcardtext",
+            "label": "ID Details Text",
+            "description": "ID Details Text",
+            "nodeLabel": "ID Details Text",
+            "mainClass": "com.automationanywhere.botcommand.sk.GetIDCardTextCommand",
+            "returnType": "DICTIONARY",
+            "returnSubtype": "STRING",
+            "returnLabel": "ID Details",
+            "returnRequired": true,
+            "attributes": [
+                {
+                    "name": "text",
+                    "label": "ID Text",
+                    "type": "TEXT",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "idcardvalidatefile",
+            "label": "Validate ID File",
+            "description": "Validate ID File",
+            "nodeLabel": "Validae ID File",
+            "mainClass": "com.automationanywhere.botcommand.sk.ValidateIDCardFileCommand",
+            "returnType": "BOOLEAN",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "Valid",
+            "returnRequired": true,
+            "attributes": [
+                {
+                    "name": "textfile",
+                    "label": "ID Text File",
+                    "type": "FILE",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "idcardvalidatetext",
+            "label": "Validate ID Text",
+            "description": "Validate ID Text",
+            "nodeLabel": "Validae ID Text",
+            "mainClass": "com.automationanywhere.botcommand.sk.ValidateIDCardTextCommand",
+            "returnType": "BOOLEAN",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "Valid",
+            "returnRequired": true,
+            "attributes": [
+                {
+                    "name": "text",
+                    "label": "ID Text",
+                    "type": "TEXT",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
